@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My First Function</title>
+  </head>
+  <body>
+    <h1>Open the console to see the magic!</h1>
+
+    <script>
+      // FUNCTIONS
+      // ================================================================================
+      // var a = 3
+      // var b = 6
+      // var c = 7
+      
+      
+      function adder (a,b,c){
+        return a + b + c
+      }
+
+      console.log(adder(2,7,1))
+      console.log(a,b,c)
+
+      console.log("The result of adder() is " + sum)
+
+
+      var multiplier = function (a,b,c) {
+        return a * b * c
+      }
+
+      console.log(multiplier(3,4,5))
+
+        function isString (a,b,c) {
+          if (typeof a === 'string' &&
+              typeof b === 'string' && 
+              typeof c === 'string'
+          ) {
+            return "Yes these are strings"
+          } else  {
+            return " no these are not all strings "
+          }
+        }
+
+        var stringCheck = isString("hello", "goodbye", false)
+
+        console.log(stringCheck)
+
+        function vowelChecker(x) {
+          var firstChar = x.charAt(0)
+
+          firstChar = firstChar.toLowerCase()
+
+          var vowels = ["a", "e", "i", "o", "u"]
+
+          var isVowel = vowels.includes(firstChar)
+
+          return isVowel
+        }
+
+        
+
+        
+
+    </script>
+  </body>
+</html>
