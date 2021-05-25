@@ -8,7 +8,8 @@ body {
   background-color: #d9dcd6;
 }
 
-.header {
+/*the beginning of header*/
+header {
   padding: 20px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -16,28 +17,32 @@ body {
   color: #ffffff;
 }
 
-.header h1 {
+header h1 {
   display: inline-block;
   font-size: 48px;
 }
 
-.header h1 .seo {
+header h1 .seo {
   color: #d9dcd6;
 }
 
-.header div {
+/*change .header div to header nav*/
+header nav {
   padding-top: 15px;
   margin-right: 20px;
   float: right;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  /*and "" in front/and after font Calibri*/
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+    sans-serif;
   font-size: 20px;
 }
 
-.header div ul {
+/*change .header div ul to .header nav ul*/
+header nav ul {
   list-style-type: none;
 }
-
-.header div ul li {
+/*change .header div ul li to .header nav ul li*/
+header nav ul li {
   display: inline-block;
   margin-left: 25px;
 }
@@ -46,11 +51,13 @@ a {
   color: #ffffff;
   text-decoration: none;
 }
+/*the end of header*/
 
 p {
   font-size: 16px;
 }
 
+/*the beginning of "hero" section*/
 .hero {
   height: 800px;
   width: 100%;
@@ -59,17 +66,45 @@ p {
   background-size: cover;
   background-position: center;
 }
+/*the end of "hero" section*/
 
-.float-left,
-.float-right {
+/*the beginning of section "content"*/
+
+.float-left {
   float: left;
   margin-right: 25px;
+}
+
+.float-right {
+  float: right;
+  margin-left: 25px;
 }
 
 .content {
   width: 75%;
   display: inline-block;
   margin-left: 20px;
+}
+
+/*delete the other two classes that have the same content change class name to "search-catagory"*/
+.search-catagory {
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 300px;
+  /*and "" in front/and after font Calibri*/
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+    sans-serif;
+  background-color: #0072bb;
+  color: #ffffff;
+}
+
+.search-catagory img {
+  max-height: 200px;
+}
+
+.search-catagory h2 {
+  margin-bottom: 20px;
+  font-size: 36px;
 }
 
 .benefits {
@@ -79,10 +114,13 @@ p {
   float: right;
   width: 20%;
   height: 100%;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  /*and "" in front/and after font Calibri*/
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+    sans-serif;
   background-color: #2589bd;
 }
 
+/*delete the classes with the same content and create new class "benefit-all"*/
 .benefit-all {
   margin-bottom: 32px;
   color: #ffffff;
@@ -98,26 +136,11 @@ p {
   margin: 10px auto;
   max-width: 150px;
 }
+/*the end of section "content"*/
 
-.search-catagory {
-  margin-bottom: 20px;
-  padding: 50px;
-  height: 300px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: #0072bb;
-  color: #ffffff;
-}
+/*beginning of footer*/
 
-.search-catagory img {
-  max-height: 200px;
-}
-
-.search-catagory h2 {
-  margin-bottom: 20px;
-  font-size: 36px;
-}
-
-.footer {
+footer {
   padding: 30px;
   clear: both;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -125,6 +148,8 @@ p {
   text-align: center;
 }
 
-.footer h2 {
+footer h2 {
   font-size: 20px;
 }
+
+/*the end of footer*/
